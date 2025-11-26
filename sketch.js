@@ -1,8 +1,4 @@
-// =======================================================
-//        艺术感升级版：交互式数字雪景球
-// =======================================================
-
-const recipientName = "";
+const recipientName = "Pear";
 
 // 1. 定义设计尺寸
 const designWidth = 1600;
@@ -30,7 +26,7 @@ let customFont;
 let song;
 let musicStarted = false;
 
-const snowCount = 600; // 稍微增加雪花数量
+const snowCount = 520;
 
 function preload() {
   try {
@@ -478,7 +474,7 @@ class ParticleStar {
       }
     }
 
-    // 3. 内部填充粒子 (完全重写)
+    // 3. 内部填充粒子
     // 使用三角形剖分法：五角星由10个小三角形组成 (中心点到每两个相邻顶点)
     // 这样可以确保粒子均匀分布在整个五角星内，不只集中在中心
     const fillParticleCount = 150;
